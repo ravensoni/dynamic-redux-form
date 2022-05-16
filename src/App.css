@@ -1,0 +1,282 @@
+* {
+	font-style: normal;
+}
+
+.otherdiv {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 880px;
+	height: 100%;
+	border-left: 1px;
+	border-left-style: solid;
+	border-color: lightgray;
+}
+
+.scenetextdiv {
+	text-align: center;
+}
+
+/*  */
+/* css var */
+
+html {
+	--tooltip-color-background: #7C0000;
+	--tooltip-arrow-color-background: #7C0000;
+	--tooltip-arrow-color: #7C0000;
+	--custom-styles-theme-color-background: #7C0000;
+	--custom-styles-theme-color: #7C0000;
+	--custom-styles-gray-color-background: #e6e6e6;
+	--custom-styles-gray-color: #e6e6e6;
+	--custom-styles-drakgray-color: #757575;
+	--mui-form-control-label-root-color: #000000;
+	--mui-form-control-label-root-color-background: #f9f9f9;
+	--radio-styling-sel-color-for-exterior-dialog: #000000;
+	--radio-styling-sel-background-color-for-exterior-dialog: #f9f9f9;
+	--radio-styling-sel-border-for-exterior-dialog: 0.1px solid #7C0000;
+	--color-for-clone-button-of-exterior-dialog: #ffffff;
+	--background-color-for-clone-button-of-exterior-dialog: #7C0000;
+	--color-for-clone-button-onhover-of-exterior-dialog: #ffffff;
+	--background-color-for-clone-button-onhover-of-exterior-dialog: #7C0000;
+	--remove-button-color-of-exterior-dialog: #ffffff;
+	--remove-button-background-color-of-exterior-dialog: #7C0000;
+	--remove-button-color-of-exterior-dialog-onhover: #ffffff;
+	--remove-button-background-color-of-exterior-dialog-onhover: #7C0000;
+	--close-button-color-of-exterior-dialog: #000000;
+	--close-button-background-color-of-exterior-dialog: #f9f9f9;
+	--functional-button-horizontal-background-color: #ffffff;
+	--radio-label-root-color: #000000;
+	--radio-label-root-background-color: #f9f9f9;
+	--radio-label-root-selected-color: #000000;
+	--radio-label-root-selected-background-color: #f9f9f9;
+	--radio-label-root-selected-border: 0.1px solid #7C0000;
+	--mui-radio-color-primary-mui-checked: transparent !important;
+	--mui-iconbutton-color-primary-mui-checked: #7C0000;
+	--estimate-dialog-close-button-color: #7C0000;
+}
+
+
+/*  */
+.MuiFormControlLabel-root {
+	color: var(--mui-form-control-label-root-color);
+	background-color: var(--mui-form-control-label-root-color-background);
+	border-radius: 10px;
+	margin-left: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
+	margin: 2px;
+	width: 300px;
+	cursor: pointer;
+}
+
+
+
+.CornerSpanText {
+	text-align: center;
+	font-size: 8px;
+	padding-top: 10px;
+	display: table;
+	line-height: 10px;
+	font-family: montserrat;
+}
+
+
+.style_prevu_kit {
+	display:inline-block;
+	margin: 5px;
+	border:0px;
+	width:45px;
+	height:45px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1); 
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1); 
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 200ms ease-in;
+	transform: scale(1);   
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.1);
+}
+.style_prevu_kit:hover{
+	z-index: 2;
+}
+.style_prevu_kit_ {
+	display: inline-block;
+	margin: 5px;
+	width: 45px;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.1);
+	background-image: url("Select.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: content-box;
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	background-blend-mode: darken;
+}
+
+/*  */
+.style_prevu_kit2 {
+	display:inline-block;
+	margin-right: 15px;
+	margin-top: 5px;
+	border: 1px solid grey;
+	width:40px;
+	height:40px;
+	position: relative;
+	-webkit-transition: all 200ms ease-in;
+	-webkit-transform: scale(1); 
+	-ms-transition: all 200ms ease-in;
+	-ms-transform: scale(1); 
+	-moz-transition: all 200ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 200ms ease-in;
+	transform: scale(1);   
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 1);
+}
+.style_prevu_kit2:hover{
+	z-index: 2;
+}
+
+.style_prevu_kit_2 {
+	display:inline-block;
+	margin-right: 15px;
+	margin-top: 5px;
+	border: 1px solid grey;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.1);
+	background-image: url("Select.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.imageOverlapdiv {
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-left: -48px;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+}
+.imageOverlapdiv_sel {
+	background-image: url("Select.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 18px;
+	position: relative;
+	margin-top: 17px;
+	margin-bottom: 17px;
+	margin-left: -38px;
+	width: 20px;
+	height: 20px;
+}
+
+.circleImage{
+	align-items: center;
+}
+
+.style_prevu_block{
+	display: block;
+	margin-bottom: 10px;
+}
+
+/*  */
+@media screen and (max-width: 960px) {
+	.style_prevu_kit {
+		display:inline-block;
+		margin: 5px;
+		border:0px;
+		width:45px;
+		height:45px;
+		position: relative;
+		cursor: pointer;
+		background: rgba(255, 255, 255, 0.1);
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		opacity: 1;
+	}
+	.style_prevu_kit:hover{
+		z-index: 2;
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		opacity: 1;
+	}
+	.style_prevu_kit_ {
+		display: inline-block;
+		margin: 5px;
+		width: 45px;
+		height: 45px;
+		position: relative;
+		cursor: pointer;
+		z-index: 2;
+		background: rgba(255, 255, 255, 0.1);
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		opacity: 1;
+	}
+	
+	/*  */
+	.style_prevu_kit2 {
+		display:inline-block;
+		margin-right: 15px;
+		margin-top: 5px;
+		border: 1px solid grey;
+		width:40px;
+		height:40px;
+		position: relative;
+		cursor: pointer;
+		background-color: rgba(255, 255, 255, 1);
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		opacity: 1;
+	}
+	.style_prevu_kit2:hover{
+		z-index: 2;
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		opacity: 1;
+	}
+	
+	.style_prevu_kit_2 {
+		display:inline-block;
+		margin-right: 15px;
+		margin-top: 5px;
+		width:40px;
+		height:40px;
+		position: relative;
+		cursor: pointer;
+		z-index: 2;
+		background: rgba(255, 255, 255, 1);
+		-moz-opacity: 1;
+		-khtml-opacity: 1;
+		opacity: 1;
+		background-image: url("Select.svg");
+		background-size: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+
+.form-check-input {
+	display: none;
+}
